@@ -41,17 +41,19 @@ class Faq extends Component {
 												<div className="card-header bg-light p-3">
 													<h4 className="title mb-0 faq-question">
 														{' '}
-														Kako Liberato radi ?{' '}
+														Što Liberato omogućuje ?{' '}
 													</h4>
 												</div>
 											</Link>
 											<Collapse isOpen={this.state.collapse1}>
 												<div className="card-body">
 													<p className="text-muted mb-0 faq-ans">
-														There are many variations of passages of Lorem Ipsum
-														available, but the majority have suffered alteration
-														in some form, by injected humour, or randomised
-														words which don't look even slightly believable.
+														Liberato je interaktivna karta pomoću koje osobe s
+														invaliditetom na jednostavan i brz način dolaze do
+														točnih informacija o pristupačnim lokacijama. U
+														svega par klikova miša biti će omogućen unos novih
+														lokacija (objekata) na mapu, kontakt informacije te
+														galerija slika.
 													</p>
 												</div>
 											</Collapse>
@@ -83,10 +85,14 @@ class Faq extends Component {
 											<Collapse isOpen={this.state.collapse2}>
 												<div className="card-body">
 													<p className="text-muted mb-0 faq-ans">
-														There are many variations of passages of Lorem Ipsum
-														available, but the majority, by injected humour, or
-														randomised words which don't look even slightly
-														believable.
+														Objekte smo podijelili u tri kategorije, te ih
+														prikazali svjetlima semafora :{' '}
+														<strong>ZELENO svjetlo</strong> - objekt u
+														potpunosti zadovoljava uvjete osoba s invaliditetom{' '}
+														<br /> <strong>NARANČASTO svjetlo</strong> - objekt
+														djelomično zadovoljava uvjete osoba s invaliditetom{' '}
+														<br /> <strong>CRVENO svjetlo</strong> - objekt ne
+														zadovoljava uvjete osoba s invaliditetom
 													</p>
 												</div>
 											</Collapse>
@@ -118,10 +124,8 @@ class Faq extends Component {
 											<Collapse isOpen={this.state.collapse3}>
 												<div className="card-body">
 													<p className="text-muted mb-0 faq-ans">
-														There are many variations of passages of Lorem Ipsum
-														available, but the majority have suffered alteration
-														in some form, by injected humour, or randomised
-														words which believable.
+														Trenutno samo podrucje grada Splita sa ciljem da se
+														proširi na ostatak Republike Hrvatske.
 													</p>
 												</div>
 											</Collapse>
@@ -154,10 +158,9 @@ class Faq extends Component {
 											<Collapse isOpen={this.state.collapse4}>
 												<div className="card-body">
 													<p className="text-muted mb-0 faq-ans">
-														There are many variations of passages of Lorem Ipsum
-														available, but the majority have suffered alteration
-														in some form, by injected humour, or randomised
-														words which believable.
+														Liberato je neprofitna organizacija osnovana od
+														strane trojice studenata. Trenutno se financiramo od
+														donacija, uspjeha na natjecanjima te članarina.
 													</p>
 												</div>
 											</Collapse>
