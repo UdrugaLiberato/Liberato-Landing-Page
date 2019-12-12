@@ -10,9 +10,9 @@ import { TinyButton as ScrollUpButton } from 'react-scroll-up-button';
 
 class Layout extends Component {
 	componentDidMount() {
-		document.getElementById('pageLoader').style.display = 'block';
+		document.querySelector('#pageLoader').style.display = 'block';
 		setTimeout(function() {
-			document.getElementById('pageLoader').style.display = 'none';
+			document.querySelector('#pageLoader').style.display = 'none';
 		}, 1000);
 	}
 

@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'reactstrap';
-
 // import images
 import stipo from '../images/team/stipo.jpg';
 import mijo from '../images/team/mijo.jpg';
@@ -46,15 +45,6 @@ class AboutUs extends Component {
 		window.removeEventListener('scroll', this.scrollNavigation);
 	}
 
-	scrollNavigation = () => {
-		var doc = document.documentElement;
-		var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-		if (top > 80) {
-			document.getElementById('topnav').classList.add('nav-sticky');
-		} else {
-			document.getElementById('topnav').classList.remove('nav-sticky');
-		}
-	};
 
 	render() {
 		return (
@@ -88,7 +78,7 @@ class AboutUs extends Component {
 												<img
 													src={member.picture}
 													className="img-fluid d-block rounded-pill mx-auto"
-													alt={member.name}
+													alt={member.name+'picture'}
 												/>
 												<ul className="list-unstyled social-icon team-icon mb-0 mt-4">
 													<li className="list-inline-item">

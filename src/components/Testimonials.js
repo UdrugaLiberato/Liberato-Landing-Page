@@ -90,8 +90,8 @@ class Testimonials extends Component {
 	};
 
 	showItems = () => {
-		var itemsData = [];
-		var data = [];
+		let itemsData = [];
+		let data = [];
 		for (var i = 0; i < this.state.total; i++) {
 			if (i % this.state.itemCount === 0 && i > 0) {
 				data.push(

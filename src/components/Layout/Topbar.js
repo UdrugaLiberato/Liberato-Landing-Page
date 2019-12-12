@@ -35,7 +35,7 @@ class Topbar extends Component {
 										Kako radi
 									</Scroll>
 								</li>
-								{/* <li>
+								<li>
 									<Scroll
 										to="partners"
 										offset={-150}
@@ -44,14 +44,19 @@ class Topbar extends Component {
 									>
 										Partneri
 									</Scroll>
-								</li> */}
+								</li>
 								<li>
 									<Scroll to="team" smooth={true} duration={500}>
 										Tim
 									</Scroll>
 								</li>
 								<li>
-									<Scroll to="contact" smooth={true} duration={500} offset={-550}>
+									<Scroll
+										to="contact"
+										smooth={true}
+										duration={500}
+										offset={-550}
+									>
 										Kontakt
 									</Scroll>
 								</li>
