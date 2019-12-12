@@ -8,6 +8,33 @@ import stipo from '../images/team/stipo.jpg';
 import mijo from '../images/team/mijo.jpg';
 import ivan from '../images/team/ivan.jpg';
 
+const teamMembers = [
+	{
+		name: 'Mijo Matijević',
+		role: 'Dopredsjednik',
+		facebook: 'https://www.facebook.com/mijo.matijevic',
+		instagram: 'https://www.instagram.com/mijo_matijevic',
+		mail: 'mijo@liberato.io',
+		picture: mijo,
+	},
+	{
+		name: 'Stipo Margić',
+		role: 'Predsjednik',
+		facebook: 'https://www.facebook.com/stipo.margic',
+		instagram: 'https://www.instagram.com/stipo.margic',
+		mail: 'stipo@liberato.io',
+		picture: stipo,
+	},
+	{
+		name: 'Ivan Ivančević',
+		role: 'Suosnivač',
+		facebook: 'https://www.facebook.com/cevaxd',
+		instagram: 'https://www.instagram.com/ivancevic.ivan',
+		mail: 'ivan@liberato.io',
+		picture: ivan,
+	},
+];
+
 class AboutUs extends Component {
 	componentDidMount() {
 		document.body.classList = '';
@@ -53,162 +80,65 @@ class AboutUs extends Component {
 						</Row>
 
 						<Row>
-							<Col lg={4} md={6} className="mt-4 pt-2">
-								<div className="team text-center">
-									<div className="position-relative">
-										<img
-											src={stipo}
-											className="img-fluid d-block rounded-pill mx-auto"
-											alt="Stipo Margić slika"
-										/>
-										<ul className="list-unstyled social-icon team-icon mb-0 mt-4">
-											<li className="list-inline-item">
-												<a
-													target="_blank"
-													href="https://www.facebook.com/stipo.margic"
-													className="rounded mr-1"
-												>
-													<i className="mdi mdi-facebook" title="Facebook"></i>
-												</a>
-											</li>
-											<li className="list-inline-item">
-												<a
-													target="_blank"
-													href="https://www.instagram.com/stipo.margic"
-													className="rounded mr-1"
-												>
-													<i
-														className="mdi mdi-instagram"
-														title="Instagram"
-													></i>
-												</a>
-											</li>
-											<li className="list-inline-item">
-												<a
-													href="mailto:stipo@liberato.io"
-													className="rounded mr-1"
-												>
-													<i className="mdi mdi-gmail" title="Mail"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div className="content pt-3 pb-3">
-										<h5 className="mb-0">
-											<Link to="#" className="name text-dark">
-												Stipo Margić
-											</Link>
-										</h5>
-										<small className="designation text-muted">
-											Predsjednik
-										</small>
-									</div>
-								</div>
-							</Col>
-
-							<Col lg={4} md={6} className="mt-4 pt-2">
-								<div className="team text-center">
-									<div className="position-relative">
-										<img
-											src={mijo}
-											className="img-fluid d-block rounded-pill mx-auto"
-											alt="Mijo Matijević slika"
-										/>
-										<ul className="list-unstyled social-icon team-icon mb-0 mt-4">
-											<li className="list-inline-item">
-												<a
-													target="_blank"
-													href="https://www.facebook.com/mijo.matijevic"
-													className="rounded mr-1"
-												>
-													<i className="mdi mdi-facebook" title="Facebook"></i>
-												</a>
-											</li>
-											<li className="list-inline-item">
-												<a
-													target="_blank"
-													href="https://www.instagram.com/mijo_matijevic"
-													className="rounded mr-1"
-												>
-													<i
-														className="mdi mdi-instagram"
-														title="Instagram"
-													></i>
-												</a>
-											</li>
-											<li className="list-inline-item">
-												<a
-													href="mailto:mijo@liberato.io"
-													className="rounded mr-1"
-												>
-													<i className="mdi mdi-gmail" title="Mail"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div className="content pt-3 pb-3">
-										<h5 className="mb-0">
-											<Link to="#" className="name text-dark">
-												Mijo Matijević
-											</Link>
-										</h5>
-										<small className="designation text-muted">
-											Dopredsjednik
-										</small>
-									</div>
-								</div>
-							</Col>
-
-							<Col lg={4} md={6} className="mt-4 pt-2">
-								<div className="team text-center">
-									<div className="position-relative">
-										<img
-											src={ivan}
-											className="img-fluid d-block rounded-pill mx-auto"
-											alt="Ivan Ivančević slika"
-										/>
-										<ul className="list-unstyled social-icon team-icon mb-0 mt-4">
-											<li className="list-inline-item">
-												<a
-													target="_blank"
-													href="https://www.facebook.com/cevaxd"
-													className="rounded mr-1"
-												>
-													<i className="mdi mdi-facebook" title="Facebook"></i>
-												</a>
-											</li>
-											<li className="list-inline-item">
-												<a
-													target="_blank"
-													href="https://www.instagram.com/ivancevic.ivan"
-													className="rounded mr-1"
-												>
-													<i
-														className="mdi mdi-instagram"
-														title="Instagram"
-													></i>
-												</a>
-											</li>
-											<li className="list-inline-item">
-												<a
-													href="mailto:ivan@liberato.io"
-													className="rounded mr-1"
-												>
-													<i className="mdi mdi-gmail" title="Mail"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div className="content pt-3 pb-3">
-										<h5 className="mb-0">
-											<Link to="#" className="name text-dark">
-												Ivan Ivančević
-											</Link>
-										</h5>
-										<small className="designation text-muted">Suosnivač</small>
-									</div>
-								</div>
-							</Col>
+							{teamMembers.map((member, i) => {
+								return (
+									<Col lg={4} md={6} className="mt-4 pt-2">
+										<div className="team text-center">
+											<div className="position-relative">
+												<img
+													src={member.picture}
+													className="img-fluid d-block rounded-pill mx-auto"
+													alt={member.name}
+												/>
+												<ul className="list-unstyled social-icon team-icon mb-0 mt-4">
+													<li className="list-inline-item">
+														<a
+															target="_blank"
+															href=	{member.facebook}
+															className="rounded mr-1"
+														>
+															<i
+																className="mdi mdi-facebook"
+																title="Facebook"
+															></i>
+														</a>
+													</li>
+													<li className="list-inline-item">
+														<a
+															target="_blank"
+															href={member.instagram}
+															className="rounded mr-1"
+														>
+															<i
+																className="mdi mdi-instagram"
+																title="Instagram"
+															></i>
+														</a>
+													</li>
+													<li className="list-inline-item">
+														<a
+															href={'mailto:'+member.mail}
+															className="rounded mr-1"
+														>
+															<i className="mdi mdi-gmail" title="Mail"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div className="content pt-3 pb-3">
+												<h5 className="mb-0">
+													<Link to="#" className="name text-dark">
+														{member.name}
+													</Link>
+												</h5>
+												<small className="designation text-muted">
+													{member.role}
+												</small>
+											</div>
+										</div>
+									</Col>
+								);
+							})}
 						</Row>
 					</div>
 				</section>
