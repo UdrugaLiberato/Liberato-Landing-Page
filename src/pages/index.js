@@ -47,21 +47,21 @@ class Index extends Component {
 				id: 1,
 				title: 'Brzo',
 				description:
-					'Nisi aenean vulputate eleifend tellus vitae eleifend enim a eleifend Aliquam aenean elementum semper.',
+					'U svega par klikova miša biti će omogućen unos novih lokacija (objekata) na mapu, kontakt informacije te galerija slika.',
 				imgUrl: fast,
 			},
 			{
 				id: 2,
 				title: 'Besplatno',
 				description:
-					'Allegedly, a Latin scholar established the origin of the text established by compiling unusual word.',
+					'Pregledavanje svih objekata te dodavanja novih je potpuno besplatno.',
 				imgUrl: free,
 			},
 			{
 				id: 3,
 				title: 'Jednostavno',
 				description:
-					'It seems that only fragments of the original text remain in the Lorem the original Ipsum texts used today.',
+					'Za pregled karte Vam je potreban samo internet preglednik. Aplikacija je prilagođena i za mobilne uređaje.',
 				imgUrl: simple,
 			},
 		];
@@ -89,7 +89,7 @@ class Index extends Component {
 				<Faq />
 
 				{/* partner */}
-{/* 				<section id="partners" className="pt-5 pb-5 bg-light">
+				<section id="partners" className="pt-5 pb-5 bg-light">
 					<div className="container">
 						<Row className="justify-content-center">
 							<Col className="text-center">
@@ -103,7 +103,7 @@ class Index extends Component {
 						</Row>
 					</div>
 				</section>
- */}
+
 				{/* About Us */}
 				<AboutUs />
 

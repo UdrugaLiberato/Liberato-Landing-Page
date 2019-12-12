@@ -7,7 +7,7 @@ import RBCarousel from 'react-bootstrap-carousel';
 import 'react-bootstrap-carousel/dist/react-bootstrap-carousel.css';
 
 // Import images
-import armando from '../images/testi/armando.jpg';
+import armando from '../images/testi/armando.jpeg';
 import cubelic from '../images/testi/cubelic.jpg';
 import maljkovic from '../images/testi/maljkovic.jpg';
 
