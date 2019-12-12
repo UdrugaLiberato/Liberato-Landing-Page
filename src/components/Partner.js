@@ -9,30 +9,19 @@ import ictzupanija from '../images/partners/ictzupanija.png';
 import oss from '../images/partners/oss.png';
 import gradSplit from '../images/partners/gradSplit.svg';
 
+const partners = [splitX, inspiration4web, ictzupanija, oss, gradSplit];
+
 class Partner extends Component {
-render() {
+	render() {
 		return (
 			<React.Fragment>
-				<Col lg={2} md={2} className="col-6 text-center">
-					<img src={splitX} height="70" alt="SplitX logo" />
-				</Col>
-
-				<Col lg={2} md={2} className="col-6 text-center">
-					<img src={inspiration4web} height="70" alt="inspiration4web logo" />
-				</Col>
-
-				<Col lg={2} md={2} className="col-6 text-center mt-4 mt-sm-0">
-					<img src={ictzupanija} height="70" alt="" />
-				</Col>
-
-				<Col lg={2} md={2} className="col-6 text-center mt-4 mt-sm-0">
-					<img src={oss} height="70" alt="" />
-				</Col>
-
-				<Col lg={2} md={2} className="col-6 text-center mt-4 mt-sm-0">
-					<img src={gradSplit} height="70" alt="" />
-				</Col>
-
+				{partners.map(partner => {
+					return (
+						<Col lg={2} md={2} className="col-6 text-center">
+							<img src={partner} height="70" alt="Partner logo" />
+						</Col>
+					);
+				})}
 			</React.Fragment>
 		);
 	}
