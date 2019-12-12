@@ -8,15 +8,9 @@ import inspiration4web from '../images/partners/inspiration4web.png';
 import ictzupanija from '../images/partners/ictzupanija.png';
 import oss from '../images/partners/oss.png';
 import gradSplit from '../images/partners/gradSplit.svg';
-import client6 from '../images/client/6.png';
 
 class Partner extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
-
-	render() {
+render() {
 		return (
 			<React.Fragment>
 				<Col lg={2} md={2} className="col-6 text-center">

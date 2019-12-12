@@ -9,11 +9,6 @@ import Footer from './Footer';
 import { TinyButton as ScrollUpButton } from 'react-scroll-up-button';
 
 class Layout extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
-
 	componentDidMount() {
 		document.getElementById('pageLoader').style.display = 'block';
 		setTimeout(function() {

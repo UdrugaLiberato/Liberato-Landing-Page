@@ -9,11 +9,6 @@ import mijo from '../images/team/mijo.jpg';
 import ivan from '../images/team/ivan.jpg';
 
 class AboutUs extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
-	
 	componentDidMount() {
 		document.body.classList = '';
 		window.addEventListener('scroll', this.scrollNavigation, true);

@@ -3,13 +3,7 @@ import { Row, Col } from 'reactstrap';
  
 
 class FooterWithoutMenu extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = { };
-  }
-
-  render() {
+    render() {
     return (
       <React.Fragment>
         <footer className="footer footer-bar">

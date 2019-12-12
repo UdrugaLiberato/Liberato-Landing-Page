@@ -5,10 +5,6 @@ import { Row, Col } from 'reactstrap';
 import roundDark from '../images/shapes/round-dark.png';
 
 class Contact extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
 	componentDidMount() {
 		document.body.classList = '';
 		window.addEventListener('scroll', this.scrollNavigation, true);

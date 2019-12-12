@@ -3,11 +3,6 @@ import { Link as Scroll } from 'react-scroll';
 import { withRouter } from 'react-router';
 
 class Topbar extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
-
 	render() {
 		return (
 			<React.Fragment>
