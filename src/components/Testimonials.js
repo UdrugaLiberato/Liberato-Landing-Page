@@ -151,7 +151,7 @@ class Testimonials extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<section className="section bg-light" id="testi">
+				<section className="section bg-gray" id="testi">
 					<div className="container">
 						<Row className="justify-content-center">
 							<Col className="text-center">

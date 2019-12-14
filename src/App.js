@@ -9,7 +9,6 @@ import {
 
 // Import Css
 import './Apps.scss';
-import './css/materialdesignicons.min.css';
 
 const index = React.lazy(() => import('./pages/index'));
 

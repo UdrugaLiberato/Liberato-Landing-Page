@@ -89,7 +89,7 @@ class Index extends Component {
 				<Faq />
 
 				{/* partner */}
-				<section id="partners" className="pt-5 pb-5 bg-light">
+				<section id="partners" className="pt-5 pb-5 bg-gray">
 					<div className="container">
 						<Row className="justify-content-center">
 							<Col className="text-center">

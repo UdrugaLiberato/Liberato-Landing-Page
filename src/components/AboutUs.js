@@ -2,6 +2,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'reactstrap';
+import { mdiFacebook, mdiInstagram, mdiGmail } from '@mdi/js';
+import Icon from '@mdi/react';
+
 // import images
 import stipo from '../images/team/stipo.jpg';
 import mijo from '../images/team/mijo.jpg';
@@ -45,11 +48,10 @@ class AboutUs extends Component {
 		window.removeEventListener('scroll', this.scrollNavigation);
 	}
 
-
 	render() {
 		return (
 			<React.Fragment>
-				<section id="team" className="section bg-light">
+				<section id="team" className="section bg-white">
 					<div className="container">
 						<Row>
 							<Col className="text-center">
@@ -78,39 +80,36 @@ class AboutUs extends Component {
 												<img
 													src={member.picture}
 													className="img-fluid d-block rounded-pill mx-auto"
-													alt={member.name+'picture'}
+													alt={member.name + 'picture'}
 												/>
 												<ul className="list-unstyled social-icon team-icon mb-0 mt-4">
 													<li className="list-inline-item">
 														<a
 															target="_blank"
-															href=	{member.facebook}
+															rel="noopener noreferrer"
+															href={member.facebook}
 															className="rounded mr-1"
 														>
-															<i
-																className="mdi mdi-facebook"
-																title="Facebook"
-															></i>
+															<Icon path={mdiFacebook} size={1} />
 														</a>
 													</li>
 													<li className="list-inline-item">
 														<a
 															target="_blank"
+															rel="noopener noreferrer"
 															href={member.instagram}
 															className="rounded mr-1"
 														>
-															<i
-																className="mdi mdi-instagram"
-																title="Instagram"
-															></i>
+															<Icon path={mdiInstagram} size={1} />
 														</a>
 													</li>
 													<li className="list-inline-item">
 														<a
-															href={'mailto:'+member.mail}
+															href={'mailto:' + member.mail}
 															className="rounded mr-1"
 														>
 															<i className="mdi mdi-gmail" title="Mail"></i>
+															<Icon path={mdiGmail} size={1} />
 														</a>
 													</li>
 												</ul>

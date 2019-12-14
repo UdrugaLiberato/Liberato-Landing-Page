@@ -6,7 +6,7 @@ class Topbar extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<header id="topnav" className="defaultscroll sticky">
+				<header id="topnav" className="defaultscroll sticky bg-gray">
 					<div className="container">
 						<div>
 							<Scroll className="logo" to="home" duration={500} smooth={true}>
@@ -16,6 +16,7 @@ class Topbar extends Component {
 						<div className="buy-button">
 							<a
 								target="_blank"
+								rel="noopener noreferrer"
 								href="https://www.facebook.com/UdrugaLiberato/"
 								className="btn btn-primary"
 							>
